@@ -24,3 +24,14 @@ more_student_grades = {
     "Peter": 10.5,
     "Sarah": 9.5
 }
+
+"""
+You can get the values of a dictionary by calling
+dict.values() and the keys of a dictionary by calling
+dict.keys()
+"""
+
+# Tuples (immutable lists)
+tuple_student_grades = (8.2, 8.1, 8.0)
+# Notice the '()' instead of the '[]'
+# Tuples are a bit faster
