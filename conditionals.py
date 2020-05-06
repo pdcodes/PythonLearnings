@@ -5,6 +5,10 @@ def mean(values):
         the_mean = sum(values) / len(values)
     return the_mean
 
+# A better way to do type checking in Python is
+# is to use the isinstance(value, type) function
+# which will return a boolean
+
 student_grades = {
     "Harry": 9.5,
     "Peter": 10.4,
