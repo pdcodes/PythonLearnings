@@ -20,7 +20,7 @@ for grades in student_grades.values():
 
 # Moving to while loops
 def convert_to_celsius(temp):
-    celsius_temp = temp * (9/5) + 40
+    celsius_temp = temp * (5/9) + 40
     return celsius_temp
 
 counter = 0
