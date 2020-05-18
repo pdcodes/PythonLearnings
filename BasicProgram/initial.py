@@ -1,5 +1,4 @@
 output_strings = []
-final_message = ''
 
 def sentence_maker(phrase):
     cap_phrase = phrase.capitalize()
