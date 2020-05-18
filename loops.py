@@ -30,3 +30,8 @@ while counter < len(temperatures):
     counter += 1
 
 print(counter)
+
+"""
+For loops end when their container is exhausted;
+While loops end when their condition is false;
+"""
