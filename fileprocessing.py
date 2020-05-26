@@ -26,3 +26,16 @@ with open("Files/new.txt", "w") as writefile:
 print(open("Files/new.txt").read())
 
 # Now we're going to append existing content to a file
+with open("Files/new.txt", "a+") as colors:
+    colors.write("\nBlack\nWhite")
+    colors.seek(0)
+    printcolors = colors.read()
+
+print(printcolors)
+
+"""
+Some additional notes:
+Python is always reading and printing from where the cursor is;
+Opening a file has a number of different modes that can be used for diff purposes;
+The .seek() method allows you to a seek to a particular index value of the string data that is returned from opening a file
+"""
