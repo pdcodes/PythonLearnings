@@ -35,3 +35,11 @@ dict.keys()
 tuple_student_grades = (8.2, 8.1, 8.0)
 # Notice the '()' instead of the '[]'
 # Tuples are a bit faster
+
+"""
+You can access help for a particular object
+by calling dir(object) or help(object).
+
+You can view built-in methods by calling
+dir(__builtins__)
+"""
