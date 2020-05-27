@@ -31,6 +31,7 @@ def lookup(word):
                 else:
                     i += 1
                     continue
+            # Return the definition for the word we *actually* want to use
             return data[new_word]
         else:
             return "I'm sorry, I don't know what to do with that word."
