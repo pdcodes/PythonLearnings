@@ -16,7 +16,7 @@ def lookup(word):
         return data[w]
     else:
         # Check for similar words
-        similars = difflib.get_close_matches(word, data.keys())
+        similars = difflib.get_close_matches(w, data.keys())
 
         # If we found similar words...
         if len(similars) > 0:
@@ -27,12 +27,14 @@ def lookup(word):
                 check_similars = input("You entered {}, but did you mean {}? Please enter 'yes' or 'no': ".format(word, similars[i]))
                 if check_similars.lower() == "yes":
                     new_word = similars[i]
-                    break
+                    # Return the definition for the word we *actually* want to use
+                    return data[new_word][0]
+                elif i == 3:
+                    return "I'm sorry, I don't know what to do with that word."
                 else:
                     i += 1
                     continue
-            # Return the definition for the word we *actually* want to use
-            return data[new_word]
+            return "I'm sorry, I don't know what to do with that word."
         else:
             return "I'm sorry, I don't know what to do with that word."
 
