@@ -29,8 +29,6 @@ def lookup(word):
                     new_word = similars[i]
                     # Return the definition for the word we *actually* want to use
                     return data[new_word][0]
-                elif i == 3:
-                    return "I'm sorry, I don't know what to do with that word."
                 else:
                     i += 1
                     continue
