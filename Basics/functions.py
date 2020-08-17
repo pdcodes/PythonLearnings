@@ -8,7 +8,7 @@ def mean(mylist):
 
 print(mean([1,5,12]))
 
-# In order to fr a function to take multiple params
+# In order for a function to take multiple params
 # we need to add those to the function definition
 def area(a, b):
     return a * b

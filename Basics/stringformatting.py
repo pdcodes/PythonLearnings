@@ -1,10 +1,10 @@
 # String formatting
 user_input = input("Enter your name: ")
 message = "Hello %s!" % user_input
-message2 = f"Hello {user_input}"
+message2 = f"Hello, {user_input}."
 # The f"String {}" approach only works for Python 3.6+"
 
-print(message, message2)
+print(message, "\n", message2)
 
 # String formatting with multiple variables
 name = input("Enter your first name: ")
